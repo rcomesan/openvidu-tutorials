@@ -16,7 +16,7 @@ declare var cordova;
 })
 export class AppComponent implements OnDestroy {
 
-    OPENVIDU_SERVER_URL = 'https://' + location.hostname + ':4443';
+    OPENVIDU_SERVER_URL = 'https://demos.openvidu.io'; //'https://' + location.hostname + ':4443';
     OPENVIDU_SERVER_SECRET = 'MY_SECRET';
 
     ANDROID_PERMISSIONS = [
@@ -230,7 +230,7 @@ export class AppComponent implements OnDestroy {
 
     private generateParticipantInfo() {
         // Random user nickname and sessionId
-        this.mySessionId = 'SessionA';
+        this.mySessionId = 'buendia';
         this.myUserName = 'Participant' + Math.floor(Math.random() * 100);
     }
 
